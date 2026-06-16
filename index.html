@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Souzza Smart Club</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'DM Sans',sans-serif;
+background:#050505;
+color:white;
+}
+
+.glow-green{
+box-shadow:0 0 30px rgba(37,211,102,0.4);
+}
+
+.pulse-btn{
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%,100%{
+box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+}
+
+50%{
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+}
+}
+
+.notification{
+animation:slide .4s ease;
+}
+
+@keyframes slide{
+from{
+opacity:0;
+transform:translateX(-50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="max-w-lg mx-auto px-4 py-8">
+
+<section class="text-center">
+
+<h1 class="text-4xl font-black leading-tight mb-4">
+
+Aprenda a Comprar Celulares Baratos e Revender na Sua Cidade 💰📱
+
+</h1>
+
+<p class="text-zinc-300 mb-6">
+
+Receba ofertas escondidas, cupons e promoções relâmpago diretamente no WhatsApp.
+
+</p>
+
+<a href="https://chat.whatsapp.com/CbiG2r9m9FuH7kT9rWHXom?s=cl&p=i&ilr=4">
+
+<button class="w-full bg-green-500 hover:bg-green-400 text-white font-bold py-4 rounded-2xl text-lg glow-green pulse-btn">
+
+ENTRAR NO GRUPO WHATSAPP
+
+</button>
+
+</a>
+
+<div id="notificationArea"
+class="mt-4 h-10 flex items-center justify-center">
+
+</div>
+
+<div class="grid grid-cols-2 gap-3 mt-6 text-sm">
+
+<div class="bg-zinc-900 p-3 rounded-xl">
+✅ +10.000 pessoas
+</div>
+
+<div class="bg-zinc-900 p-3 rounded-xl">
+🔒 Vagas limitadas
+</div>
+
+<div class="bg-zinc-900 p-3 rounded-xl">
+⚡ Grupo fecha quando lota
+</div>
+
+<div class="bg-zinc-900 p-3 rounded-xl">
+🔥 Ofertas todos os dias
+</div>
+
+</div>
+
+</section>
+
+<section class="mt-12 text-center">
+
+<h2 class="text-2xl font-bold mb-4">
+
+Entre também no Telegram
+
+</h2>
+
+<a href="https://t.me/souzzasmartclub">
+
+<button class="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 rounded-2xl text-lg">
+
+ENTRAR GRUPO TELEGRAM
+
+</button>
+
+</a>
+
+</section>
+
+<section class="mt-14">
+
+<h2 class="text-2xl font-bold text-center mb-6">
+
+O que o pessoal está dizendo 👇
+
+</h2>
+
+<div class="space-y-4">
+
+<div class="bg-zinc-900 p-4 rounded-2xl">
+“Comprei um iPhone 13 barato e revendi em 2 dias.”
+<div class="text-yellow-400 mt-2">★★★★★</div>
+</div>
+
+<div class="bg-zinc-900 p-4 rounded-2xl">
+“Os cupons realmente funcionam. Economizei muito.”
+<div class="text-yellow-400 mt-2">★★★★★</div>
+</div>
+
+<div class="bg-zinc-900 p-4 rounded-2xl">
+“Grupo top pra quem quer renda extra.”
+<div class="text-yellow-400 mt-2">★★★★★</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="mt-14 text-center">
+
+<h2 class="text-2xl font-bold mb-5">
+
+As vagas acabam em:
+
+</h2>
+
+<div class="flex justify-center gap-4 mb-8">
+
+<div class="bg-zinc-900 p-4 rounded-2xl min-w-[70px]">
+<div id="hours"
+class="text-3xl font-black text-yellow-400">
+02
+</div>
+<div class="text-xs">
+HORAS
+</div>
+</div>
+
+<div class="bg-zinc-900 p-4 rounded-2xl min-w-[70px]">
+<div id="minutes"
+class="text-3xl font-black text-yellow-400">
+47
+</div>
+<div class="text-xs">
+MIN
+</div>
+</div>
+
+<div class="bg-zinc-900 p-4 rounded-2xl min-w-[70px]">
+<div id="seconds"
+class="text-3xl font-black text-yellow-400">
+33
+</div>
+<div class="text-xs">
+SEG
+</div>
+</div>
+
+</div>
+
+<a href="https://chat.whatsapp.com/CbiG2r9m9FuH7kT9rWHXom?s=cl&p=i&ilr=4">
+
+<button class="w-full bg-green-500 hover:bg-green-400 text-white font-bold py-4 rounded-2xl text-lg glow-green">
+
+QUERO ENTRAR AGORA
+
+</button>
+
+</a>
+
+</section>
+
+<footer class="mt-14 pb-10">
+
+<a href="https://www.tiktok.com/@souzzasmart">
+
+<button class="w-full bg-red-600 hover:bg-red-500 py-4 rounded-2xl font-bold">
+
+Conheça nosso trabalho no TIKTOK
+
+</button>
+
+</a>
+
+</footer>
+
+</main>
+
+<script>
+
+const names = [
+'Carlos Cell',
+'Top Cell',
+'GB Inports',
+'Pedro Iphones',
+'JR CELULAR',
+'Lucas CELL',
+'Mundo IPHONE',
+'JP Celphone',
+'Gabriel smart',
+'Letícia CELULARES'
+];
+
+function showNotification(){
+
+const area = document.getElementById('notificationArea');
+
+const randomName =
+names[Math.floor(Math.random()*names.length)];
+
+area.innerHTML = `
+<div class="notification bg-green-500/20 border border-green-500/40 px-4 py-2 rounded-xl text-sm">
+🟢 ${randomName} entrou no grupo agora
+</div>
+`;
+
+}
+
+showNotification();
+
+setInterval(showNotification,4000);
+
+let totalSeconds = 2*3600+47*60+33;
+
+setInterval(()=>{
+
+if(totalSeconds>0){
+totalSeconds--;
+}
+
+const h=Math.floor(totalSeconds/3600);
+
+const m=Math.floor((totalSeconds%3600)/60);
+
+const s=totalSeconds%60;
+
+document.getElementById('hours').innerText=
+String(h).padStart(2,'0');
+
+document.getElementById('minutes').innerText=
+String(m).padStart(2,'0');
+
+document.getElementById('seconds').innerText=
+String(s).padStart(2,'0');
+
+},1000);
+
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2493132487808126');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2493132487808126&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code --></body>
+</html>
